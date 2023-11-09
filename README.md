@@ -1,5 +1,5 @@
 # Overview
-This repo contains a solution for [problem_stores](https://gist.github.com/alejandrofsil/e3142b28d34ece49be5ef31462908b9b). 
+This repo contains a solution for the challenge [problem_stores](https://gist.github.com/alejandrofsil/e3142b28d34ece49be5ef31462908b9b). 
 
 # Problem
 
@@ -8,7 +8,7 @@ At Zara we want to open 15 new physical stores in Germany.
 As a member of the Data & Analytics team, you are assigned this research. You have to analyze the problem, come to a solution and propose 15 new physical stores.
 
 # Assignment
-
+![image](https://github.com/mortfer/optimize_sales/blob/master/germany.png)
 Given the sales and the current open stores in Germany, propose 15 new locations following these rules:
 
 - New stores _must_ be located on zip codes that already have eCommerce sales.
@@ -25,5 +25,6 @@ Propose stores sequentially, starting from the one with the highest sum of zipco
 Details about implementation:
  - It is important to avoid calculating distances already made in previous iterations.
  - It is important to use sparse matrix (scipy) for the distance matrix which contains a large number of zeros because most zip codes do not contribute to the sales of a location.
+
 This algorithm takes approximately 2 seconds
-![image]()
+![image](https://github.com/mortfer/optimize_sales/blob/master/stores.jpg)
