@@ -9,7 +9,7 @@ As a member of the Data & Analytics team, you are assigned this research. You ha
 
 # Assignment
 ![image](https://github.com/mortfer/optimize_sales/blob/master/germany.png)
-Given the sales and the current open stores in Germany, propose 15 new locations following these rules:
+Given the [sales](https://github.com/mortfer/optimize_sales/blob/master/data/sales.xlsx) and the [current open stores](https://github.com/mortfer/optimize_sales/blob/master/data/stores.xlsx) in Germany, propose 15 new locations following these rules:
 
 - New stores _must_ be located on zip codes that already have eCommerce sales.
 - All stores (new and existing) _must_ be at least 20 km apart from each other.
@@ -27,4 +27,6 @@ Details about implementation:
  - It is important to use sparse matrix (scipy) for the distance matrix which contains a large number of zeros because most zip codes do not contribute to the sales of a location.
 
 This algorithm takes approximately 2 seconds
+
+Solution:
 ![image](https://github.com/mortfer/optimize_sales/blob/master/stores.jpg)
